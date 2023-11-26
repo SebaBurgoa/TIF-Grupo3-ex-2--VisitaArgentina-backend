@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+.googleapis {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+}
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px;
+    padding-right: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  .logo {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    width: 50px; 
+  }
+
+.main-image {
+  background-image: url(../img/landscape-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(243, 250, 250);
+  background: rgba(13, 13, 13, 0.4);
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  color: cornflowerblue;
+  text-align: center;
+}
+
+i {
+  transition: 3s;
+}
+
+i:hover {
+  transform: translate(10px, 10px);
+}
+
+iframe {
+  float: right;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: inline-start; 
+  width: 360px;
+  align-items: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #34ab1e;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Agrega estilos al botón "Ver más" */
+.ver-mas-btn {
+  background-color: #34ab1e; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.ver-mas-btn:hover {
+  background-color: #ffffff; /* Color de fondo cuando se pasa el ratón por encima */
+  color: #34ab1e;
+  border: 1px solid #34ab1e;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+article {
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Estilos para el primer article */
+.article-1 {
+  background-color: #ffcc00; /* Color de fondo para el primer article */
+  padding: 20px; /* Espacio interior para el contenido */
+}
+
+/* Estilos para el segundo article */
+.article-2 {
+  background-color: #3399ff; /* Color de fondo para el segundo article */
+  padding: 20px;
+}
+
+/* Estilos para el tercer article */
+.article-3 {
+  background-color: #ff6666; /* Color de fondo para el tercer article */
+  padding: 20px;
+}
+
+.mas-info-btn {
+  border: none;
+  background-color: #ffffff;
+  color: cornflowerblue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mas-info-btn:hover {
+  color: white;
+  background-color: cornflowerblue;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #080808;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    nav {
+      flex-direction: column; /* Cambia a disposición de columna en dispositivos móviles */
+      align-items: center; /* Centra los elementos en dispositivos móviles */
+    }
+  
+    .logo {
+      margin: 0;
+      margin-bottom: 10px; /* Agrega espacio entre el logo y los enlaces en dispositivos móviles */
+    }
+  
+    nav a {
+      margin: 10px 0; /* Espacio entre los enlaces en dispositivos móviles */
+    }
+  }
+
+  form {
+    padding: 100px;
+    margin: 103px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+    background-color: #f5f5f5;
+    }
+  
+    input,textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1cc91c;
+      outline: none;
+      }
+
+      .destino {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        max-width: 300px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .destino img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .h2-destino {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .p-destino {
+        font-size: 1em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .destino {
+        width: 100%;
+    }
+}
