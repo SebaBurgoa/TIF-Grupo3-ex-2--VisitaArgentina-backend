@@ -1,10 +1,10 @@
-# TPO-Grupo2-Visita-Argentina
-Trabajo práctico grupal 1 Front end.
-Link a la página https://lucheeta.github.io/TPO-Grupo2-Visita-Argentina/
+# TIF-Grupo3 (ex 2)-Visita-Argentina
+Trabajo Integrador final backend.
+Link a la página https://lucheeta.github.io/TIF-Grupo3-ex-2--VisitaArgentina-backend/
 
 **DOCUMENTACIÓN PRELIMINAR DEL PROYECTO**
 
-Sitio web VISITÁ ARGENTINA
+Sitio web VISITÁ ARGENTINA - Backend
 
 **Descripción**
 
