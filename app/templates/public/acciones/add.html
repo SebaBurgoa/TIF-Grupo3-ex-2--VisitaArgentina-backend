@@ -1,0 +1,52 @@
+{% extends 'public/layout.html' %}
+{% block title %}Registrar Excursion{% endblock %}
+
+{% block body %}
+
+
+<section>
+    <h2>
+        <a href="/" class="left" title="Volver"><i class="bi bi-arrow-left-circle"></i></a>
+        Registrar Excursion
+        <hr>
+    </h2>
+
+    <form action="{{ url_for('formAddExcursion') }}" method="POST" class="mb-3" autocomplete="off" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="Descripcion">Descripcion</label>
+                <input type="text" name="Descripcion" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="ano">Año</label>
+                <select name="ano" class="form-control" required>
+                    <option value="">--- Seleccione el año ---</option>
+                    {% for ano in range(2022,2009,-1) %}
+                        <option value="{{ ano }}"> {{ ano }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-4">
+            <div class="col">
+                <label for="foto">Fotos</label>
+                <input type="file" name="foto" class="form-control-file" accept="image/*" required>
+            </div>
+        </div>
+        <hr>
+
+        <input class="button-primary mt-3 btn btn-info btn-block bold" type="submit" value="Guardar Registro">
+    </form>
+</section>
+
+{% endblock %}
