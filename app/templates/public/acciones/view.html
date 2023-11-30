@@ -1,0 +1,46 @@
+{% extends 'public/layout.html' %}
+{% block title %}Registrar Excursion{% endblock %}
+
+{% block body %}
+
+
+<section>
+    <h2>
+        <a href="/" class="left" title="Volver"><i class="bi bi-arrow-left-circle"></i></a>
+        Detalles de la excursion
+        <hr>
+    </h2>
+
+    {% if (infoExcursion) %}
+    
+   
+
+
+    <div class="card" style="width: 25rem;">
+      {% set urlExcursion = '/static/assets/fotos/' %}
+        {% if(infoExcursion.foto) %}
+          <img src="{{ urlExcursion }}{{ infoExcursion.foto }}" class="card-img-top" alt="coche">
+        {% else %}
+          <img src="{{ urlExcursion }}sin_foto.jpg" class="card-img-top sin_foto" alt="coche">
+        {% endif %}
+
+     
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Nombre: <strong>{{ infoExcursion.Nombre }}</strong></li>
+          <li class="list-group-item">Año: <strong>{{ infoExcursion.ano }}</strong></li>
+          <li class="list-group-item">Descripcion: <strong>{{ infoExcursion.Descripcion }}</strong></li>
+
+        </ul>
+      </div>
+
+      {% else %}
+      <div class="col-12">
+          <h2 class="text-center">
+              No existe el Excursion
+          </h2>
+      </div>
+{% endif %}
+
+</section>
+
+{% endblock %}
